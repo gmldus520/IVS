@@ -40,7 +40,7 @@ def get_deposit_products():
         options = []
         for option in option_list:
             new_option = {}
-            if option['fin_prdt_cd'] == product['fin_prdt_cd']:
+            if option['fin_co_no'] == product['fin_co_no']:
                 new_option['저축금리유형'] = option['intr_rate_type']
                 new_option['저축금리유형명'] = option['intr_rate_type_nm']
                 new_option['저축 기간'] = option['save_trm']
